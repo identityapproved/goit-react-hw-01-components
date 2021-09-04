@@ -5,7 +5,7 @@ export const Description = styled.div`
 `;
 
 export const Avatar = styled.img`
-   width: 70%;
+   width: 100%;
    height: auto;
    object-fit: fill;
    padding: 20px;

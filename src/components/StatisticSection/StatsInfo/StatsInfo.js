@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import { getRandomHex } from 'utils/randomHex';
 import { StatsList, StatsItem, Label, Percentage } from './StatsInfo.styled'
 
 export const StatsInfo = ({ id, label, percentage }) => {

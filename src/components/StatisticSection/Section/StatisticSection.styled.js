@@ -1,6 +1,7 @@
 import styled from '@emotion/styled';
 
 export const Section = styled.section`
+   margin: 0 auto;
    padding-bottom: 5px;
    ${'' /* display: flex; */}
    ${'' /* flex: 1 1 1; */}

@@ -9,9 +9,4 @@ export const Card = styled.div`
   padding: 0;
   border: 2px solid black;
   border-radius: 4px;
-  transition: all .3s ease;
-    &:hover{
-  border-color: #4267B2;
-  background: #4267B2;
-}
 `;

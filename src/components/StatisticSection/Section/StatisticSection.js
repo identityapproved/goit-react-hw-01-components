@@ -5,7 +5,7 @@ import { StatsInfo } from '../StatsInfo/StatsInfo'
 export const StatisticSection = ({ stats }) => {
    return (
       <Section>
-         <Title>Upload stats</Title>
+         {stats.title && <Title>{stats.title}</Title>}
          {stats.map(({ id, label, percentage }) => (
             <StatsInfo
                id={id}
@@ -26,3 +26,4 @@ StatisticSection.propTypes = {
       }),
    ),
 }
+
