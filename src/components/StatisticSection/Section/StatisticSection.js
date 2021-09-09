@@ -1,18 +1,23 @@
 import PropTypes from 'prop-types';
 import { Section, Title } from './StatisticSection.styled';
-import { StatsInfo } from '../StatsInfo/StatsInfo'
+import { StatsInfo } from '../StatsInfo/StatsInfo';
+import { StatsList } from './StatisticSection.styled';
+import { getRandomHex } from 'utils/randomHex';
 
 export const StatisticSection = ({ stats }) => {
    return (
       <Section>
          {stats.title && <Title>{stats.title}</Title>}
-         {stats.map(({ id, label, percentage }) => (
-            <StatsInfo
-               id={id}
-               label={label}
-               percentage={percentage}
+         <StatsList>
+            {stats.map(({ id, label, percentage }) => (
+               <StatsInfo
+                  key={id}
+                  id={id}
+                  label={label}
+                  percentage={percentage}
             />
          ))}
+         </StatsList>
       </Section>
    );
 };

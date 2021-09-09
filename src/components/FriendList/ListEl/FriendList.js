@@ -7,6 +7,7 @@ export const FriendList = ({ friends }) => {
       <ListEl>
          {friends.map(({ avatar, name, isOnline, id }) => (
             <ItemsEl
+               key={id}
                avatar={avatar}
                name={name}
                isOnline={isOnline}

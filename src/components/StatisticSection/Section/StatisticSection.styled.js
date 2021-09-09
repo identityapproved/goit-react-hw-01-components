@@ -16,3 +16,8 @@ export const Title = styled.h2`
    color: ${(props) => `${props.theme.colors.primaryText}`};
    text-transform: uppercase;
 `;
+
+export const StatsList = styled.ul`
+   padding: 0;
+   margin: 0;
+`;

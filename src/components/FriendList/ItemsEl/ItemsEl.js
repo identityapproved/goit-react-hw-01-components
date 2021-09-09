@@ -3,7 +3,7 @@ import { Avatar, Item, Name, Status } from './ItemsEl.styled';
 
 export const ItemsEl = ({ avatar, name, isOnline, id }) => {
    return (
-      <Item key={id}>
+      <Item>
          <Avatar src={avatar} alt={name} />
          <Status isOnline={isOnline}></Status>
          <Name>{name}</Name>

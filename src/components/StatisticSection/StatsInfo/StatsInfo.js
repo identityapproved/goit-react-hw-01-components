@@ -4,12 +4,11 @@ import { StatsList, StatsItem, Label, Percentage } from './StatsInfo.styled'
 
 export const StatsInfo = ({ id, label, percentage }) => {
    return (
-      <StatsList>
+
          <StatsItem key={id}>
             <Label>{label}</Label>
             <Percentage>{percentage}%</Percentage>
          </StatsItem>
-      </StatsList>
    )
 };
 

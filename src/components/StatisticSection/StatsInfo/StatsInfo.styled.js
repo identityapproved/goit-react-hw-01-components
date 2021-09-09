@@ -1,18 +1,13 @@
 import styled from '@emotion/styled';
 import { getRandomHex } from 'utils/randomHex';
 
-export const StatsList = styled.ul`
-   padding: 0;
-   margin: 0;
-   background-color: ${getRandomHex()};
-`;
-
 export const StatsItem = styled.li`
    display: flex;
    justify-content: space-around;
    align-items: center;
    padding: 5px;
    border: ${(props) => `1px solid ${props.theme.colors.secondaryText}`};
+   background-color: ${() => `${getRandomHex()}}`};
 `;
 
 export const Label = styled.span`
